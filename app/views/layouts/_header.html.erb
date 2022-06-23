@@ -1,0 +1,37 @@
+<header class="l-header">
+  <div class="l-header__container">
+    <div class="l-header__logo">
+      <%= link_to image_tag("logo.png",class:'l-header__logoIcon'), "/" %>
+    </div>
+    <nav class="l-header__nav">
+      <ul class="l-header__list">
+        <li class="l-header__item">
+          <%=link_to  "NEWS", root_path, class:"l-header__text" %>
+        </li>
+        <li class="l-header__item">
+          <%=link_to  "PROFILE", root_path, class:"l-header__text" %>
+        </li>
+        <li class="l-header__item">
+          <%=link_to  "CONTENTS", root_path, class:"l-header__text" %>
+        </li>
+        <li class="l-header__item">
+          <%=link_to  "MOVIE", root_path, class:"l-header__text" %>
+        </li>
+        <li class="l-header__item">
+          <%=link_to  "LIVE", root_path, class:"l-header__text" %>
+        </li>
+        <li class="l-header__item">
+          <%=link_to  "GOODS", root_path, class:"l-header__text" %>
+        </li>
+        <li class="l-header__item">
+          <%=link_to  "CONTACT", root_path, class:"l-header__text" %>
+        </li>
+      </ul>
+    </nav>
+    <div class="l-header__sns">
+      <%=link_to "", "https://www.instagram.com/rito_yukihira/", class:"l-header__instagram" %>
+      <%=link_to "", "https://twitter.com/rito_yukihira/", class:"l-header__twitter" %>
+      <%=link_to "", "https://www.youtube.com/channel/UCNzRNLK3_b4BeQTzTI_Cb5Q", class:"l-header__youtube" %>
+    </div>
+  </div>
+</header>

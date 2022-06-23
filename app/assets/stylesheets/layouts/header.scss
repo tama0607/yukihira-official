@@ -1,0 +1,77 @@
+.l-header{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  
+  &__container{
+    display: flex;
+    width: 90%;
+    height: 120px;
+    background-color: rgba(255,255,255,0.7);
+    border-bottom: 1px solid gray;
+  }
+  &__logoIcon{
+    max-width: 240px;
+    width: 100%;
+    height: 100%;
+  }
+  &__nav{
+    display:flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  &__list{
+    display: flex;
+  }
+  &__item{
+    &:not(:first-child){
+      margin-left: 15px;
+    }
+    &:last-child{
+      margin-right: 15px;
+    }
+  }
+  &__text{
+    font-size: 15px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:rgb(55, 135, 201);
+    font-family: "Times New Roman", "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    font-weight: 800;
+  }
+  &__sns{
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+  }
+  &__instagram{
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: image-url('instagram-logo.png');
+  }
+  &__twitter{
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: image-url('twitter-logo.png');
+    margin-left: 15px;
+  }
+  &__youtube{
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: image-url('youtube-logo.png');
+    margin-left: 15px;
+  }
+}
+
+
+
+
