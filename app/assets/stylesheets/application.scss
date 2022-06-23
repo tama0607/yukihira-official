@@ -13,7 +13,8 @@
  *= require_tree .
  *= require_self
  */
- @import 'swiper/swiper-bundle.min.css';
+ @import "slick-theme";
+ @import "slick";
 
  .l-wrap{
   background-image: image-url('pastel_back.png');
