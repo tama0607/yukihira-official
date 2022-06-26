@@ -3,7 +3,8 @@
     <div class="l-header__logo">
       <%= link_to image_tag("logo.png",class:'l-header__logoIcon'), "" %>
     </div>
-    <nav class="l-header__nav">
+    <%= render "layouts/humburger" %>
+    <nav class="l-header__pcNav">
       <ul class="l-header__list">
         <li class="l-header__item">
           <%=link_to  "NEWS", root_path, class:"l-header__text" %>
