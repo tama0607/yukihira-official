@@ -1,3 +1,6 @@
+@import 'variable';
+
+
 .l-header{
   display: flex;
   justify-content: center;
@@ -10,15 +13,24 @@
     background-color: rgba(255,255,255,0.7);
     border-bottom: 1px solid gray;
   }
-  &__logoIcon{
-    max-width: 240px;
-    width: 100%;
-    height: 100%;
-  }
-  &__nav{
-    display:flex;
+  &__logo{
+    display: flex;
     align-items: center;
-    margin-left: auto;
+    height: 120px;
+  }
+  &__logoIcon{
+    width: 100%;
+    height: 80px
+  }
+  &__pcNav{
+    @include mq(tab) {
+      display:flex;
+      align-items: center;
+      margin-left: auto;
+    }
+    @include mq(sp) {
+      display: none;
+    }
   }
   &__list{
     display: flex;
@@ -32,29 +44,34 @@
     }
   }
   &__text{
-    font-size: 15px;
-    font-size: 1.5rem;
+    font-size: 12px;
+    font-size: 1.2rem;
     text-decoration: none;
     color:rgb(55, 135, 201);
     font-family: "Times New Roman", "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
     font-weight: 800;
   }
   &__sns{
-    display: flex;
-    align-items: center;
-    padding-right: 15px;
+    @include mq(tab) {
+      display: flex;
+      align-items: center;
+      padding-right: 15px;
+    }
+    @include mq(sp) {
+      display: none;
+    }
   }
   &__instagram{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-image: image-url('instagram-logo.png');
   }
   &__twitter{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -62,8 +79,8 @@
     margin-left: 15px;
   }
   &__youtube{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -72,6 +89,83 @@
   }
 }
 
+/* PCでは非表示にしておく */
+.nav_toggle,
+.nav {
+  display: none;
+}
 
+/* スマホサイズで見た場合のスタイル */
+@include mq(sp) {
+  /* ハンバーガーのマーク */
+  .nav_toggle {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    margin: auto 20px auto auto;
+    z-index: 3;
+  }
+  .nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .nav_toggle i:nth-child(1) {
+    top: 0;
+  }
+  .nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .nav_toggle i:nth-child(3) {
+    bottom: 0;
+  }
 
+  /* クリックされた後のハンバーガーのマーク */
+  .nav_toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+  }
+  .nav_toggle.show i:nth-child(2) {
+    opacity: 0;
+  }
+  .nav_toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+  }
 
+  /* クリックで表示されるメニュー：クリックされる前 */
+  .nav {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    background-color: #fff;
+    z-index: 2;
+    height: 350px;
+  }
+  .nav_menu_li {
+    margin-bottom: 30px;
+    border-bottom: 1px dotted #333;
+  }
+  .nav_menu_li a {
+    color: skyblue;
+    text-decoration: none;
+  }
+
+  /* クリックで表示されるメニュー：クリックされた後 */
+  .nav.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
