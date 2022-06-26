@@ -19,8 +19,13 @@
     height: 120px;
   }
   &__logoIcon{
-    width: 160px;
-    height: 80px
+    @include mq(tab) {
+      width: 160px;
+      height: 80px;
+    }
+    @include mq(sp) {
+      width: 120px;
+      height: 60px;    }
   }
   &__pcNav{
     @include mq(tab) {
