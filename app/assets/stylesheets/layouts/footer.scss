@@ -18,16 +18,16 @@
     padding-right: 15px;
   }
   &__LINE{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-image: image-url('LINE-logo.png');
   }
   &__tiktok{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,8 +35,8 @@
     margin-left: 15px;
   }
   &__niconico{
-    width: 25px;
-    height: 25px;
+    width: 15px;
+    height: 15px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -47,8 +47,8 @@
     padding-left: 10px;
   }
   &__text{
-    font-size: 13px;
-    font-size: 1.3rem;
+    font-size: 11px;
+    font-size: 1.1rem;
     text-decoration: none;
     color: black;
     font-family: 'Maven Pro',sans-serif;
