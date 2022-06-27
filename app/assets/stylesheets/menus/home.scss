@@ -266,6 +266,11 @@
   }
 
 //slick矢印アイコン
+
+  .slick-prev,.slick-next{
+    width: 40px;
+    height: 40px;
+  }
   .slick-prev::before,
   .slick-next::before{
   color:#000;
