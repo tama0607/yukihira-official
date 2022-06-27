@@ -284,10 +284,10 @@
 
   .slick-next {
     @include mq(tab) {
-      right: 50px;
+      right: 30px;
     }
     @include mq(sp) {
-      right: 30px;
+      right: 10px;
     }
   }
   .slick-prev {
