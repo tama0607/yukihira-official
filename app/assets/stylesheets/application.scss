@@ -17,6 +17,8 @@
  @import "slick";
 
  .l-wrap{
+  display: flex;
+  flex-direction: column;
   background-image: image-url('pastel_back.png');
   background-size: cover;
   background-repeat: no-repeat;

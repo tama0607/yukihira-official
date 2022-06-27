@@ -1,8 +1,17 @@
+@import 'variable';
+
 .l-footer{
   display: flex;
   justify-content: center;
-  margin-top: 200px;
-  padding-bottom: 30px;
+
+  @include mq(tab) {
+    margin-top: 200px;
+    padding-bottom: 30px;
+  }
+  @include mq(sp) {
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
   
   &__container{
     display: flex;

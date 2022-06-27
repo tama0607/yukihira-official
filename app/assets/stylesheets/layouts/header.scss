@@ -1,6 +1,5 @@
 @import 'variable';
 
-
 .l-header{
   display: flex;
   justify-content: center;
@@ -25,7 +24,8 @@
     }
     @include mq(sp) {
       width: 120px;
-      height: 60px;    }
+      height: 60px;
+    }
   }
   &__pcNav{
     @include mq(tab) {
