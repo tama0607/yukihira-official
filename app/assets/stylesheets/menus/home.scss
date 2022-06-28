@@ -2,7 +2,12 @@
 
 .p-home{
   margin-top: 55px;
-  height: 1700px;
+  @include mq(tab) {
+    height: 1800px;
+  }
+  @include mq(sp) {
+    height: 1650px;
+  }
   &__container{
     display: flex;
     justify-content: center;
@@ -267,10 +272,9 @@
   }
 
 //slick矢印アイコン
-
   .slick-prev,.slick-next{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
   }
   .slick-prev::before,
   .slick-next::before{
