@@ -1,0 +1,12 @@
+<section class="p-contact">
+  <div class="p-contact__container">
+    <h1 class="p-contact__title">CONTACT</h1>
+    <%= form_for(@contact) do |f| %>
+      <div class="p-contact__form">
+          <%= f.text_field :name %>
+          <%= f.text_field :message %>
+      </div>
+      <%= f.submit '確認', class: 'p-contact__btn' %>
+    <% end %>
+  </div>
+</section>
