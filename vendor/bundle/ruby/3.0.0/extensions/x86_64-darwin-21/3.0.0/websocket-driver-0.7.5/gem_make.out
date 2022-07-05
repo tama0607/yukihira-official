@@ -1,5 +1,5 @@
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
-/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220630-64249-9xqei3.rb extconf.rb
+/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220702-89875-wj2p3.rb extconf.rb
 creating Makefile
 
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
@@ -12,4 +12,4 @@ linking shared-object websocket_mask.bundle
 
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20220630-64249-y74j8u
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20220702-89875-fpu87y

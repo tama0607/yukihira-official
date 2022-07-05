@@ -1,5 +1,5 @@
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
-/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220630-64249-9m9s3o.rb extconf.rb
+/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220702-89875-ifgy8h.rb extconf.rb
 checking for rb_block_call()... yes
 checking for rb_ary_subseq()... yes
 creating Makefile
@@ -14,4 +14,4 @@ linking shared-object racc/cparse.bundle
 
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20220630-64249-dkg08g/racc
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20220702-89875-qt862h/racc
