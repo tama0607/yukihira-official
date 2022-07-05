@@ -14,6 +14,8 @@ ActiveRecord::Schema.define(version: 2022_06_29_161310) do
 
   create_table "contacts", charset: "utf8", force: :cascade do |t|
     t.string "name", null: false
+    t.string "email", null: false
+    t.string "subject", null: false
     t.text "message", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
