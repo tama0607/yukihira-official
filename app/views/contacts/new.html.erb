@@ -1,12 +1,33 @@
 <section class="p-contact">
   <div class="p-contact__container">
     <h1 class="p-contact__title">CONTACT</h1>
-    <%= form_for(@contact) do |f| %>
-      <div class="p-contact__form">
-          <%= f.text_field :name %>
-          <%= f.text_field :message %>
-      </div>
-      <%= f.submit '確認', class: 'p-contact__btn' %>
-    <% end %>
+    <div class="p-contact__form">
+      <%= form_with model: @contact, local:true do |f| %>
+      <%= render 'layouts/error_messages', model: f.object %>
+      <%= flash[:recaptcha_error] %>
+      <div class="p-contact__box">
+          <%= f.label :name, "お名前", class: "p-contact__label" %>
+          <%= f.text_field :name, placeholder: "お名前（必須）", class: "p-contact__name" %>
+        </div>
+        <div class="p-contact__box">
+          <%= f.label :email, "メールアドレス", class: "p-contact__label" %>
+          <%= f.text_field :email, placeholder: "メールアドレス（必須）", class: "p-contact__email" %>
+        </div>
+        <div class="p-contact__box">
+          <%= f.label :subject, "件名", class: "p-contact__label" %>
+          <%= f.text_field :subject, placeholder: "件名（必須）", class: "p-contact__subject" %>
+        </div>
+        <div class="p-contact__box">
+          <%= f.label :message, "本文", class: "p-contact__label" %>
+          <%= f.text_area :message, placeholder: "本文（必須 : 500字以内）", class: "p-contact__message" %>
+        </div>
+        <div class="p-contact__recaptcha">
+          <%= recaptcha_tags %>
+        </div>
+        <div class="p-contact__btnBox">
+          <%= f.submit '送信', class: 'p-contact__btn' %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </section>
