@@ -3,4 +3,6 @@ class MenusController < ApplicationController
   end
   def profile
   end
+  def live
+  end
 end
