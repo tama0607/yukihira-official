@@ -1,5 +1,5 @@
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.12.0/ext/bootsnap
-/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220705-19724-l0v8ca.rb extconf.rb
+/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220706-28227-xwbgur.rb extconf.rb
 creating Makefile
 
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.12.0/ext/bootsnap
@@ -12,4 +12,4 @@ linking shared-object bootsnap/bootsnap.bundle
 
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.12.0/ext/bootsnap
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220705-19724-pxjz1d/bootsnap
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220706-28227-o4xvpc/bootsnap

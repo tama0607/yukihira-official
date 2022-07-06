@@ -1,5 +1,5 @@
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.8/ext/nio4r
-/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220705-19724-6oqpyn.rb extconf.rb
+/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220706-28227-zra8tk.rb extconf.rb
 checking for unistd.h... yes
 checking for linux/aio_abi.h... no
 checking for linux/io_uring.h... no
@@ -25,4 +25,4 @@ linking shared-object nio4r_ext.bundle
 
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/nio4r-2.5.8/ext/nio4r
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20220705-19724-fzuuhw
+/usr/bin/install -c -m 0755 nio4r_ext.bundle ./.gem.20220706-28227-vzjlbs

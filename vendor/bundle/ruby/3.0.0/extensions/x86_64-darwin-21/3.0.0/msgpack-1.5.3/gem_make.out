@@ -1,5 +1,5 @@
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/msgpack-1.5.3/ext/msgpack
-/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220705-19724-g5cwje.rb extconf.rb
+/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220706-28227-zkgbgc.rb extconf.rb
 checking for ruby/st.h... yes
 checking for st.h... no
 checking for rb_enc_interned_str() in ruby.h... yes
@@ -27,4 +27,4 @@ linking shared-object msgpack/msgpack.bundle
 
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/msgpack-1.5.3/ext/msgpack
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20220705-19724-ulhe1z/msgpack
+/usr/bin/install -c -m 0755 msgpack.bundle ./.gem.20220706-28227-7jg7gu/msgpack

@@ -1,5 +1,5 @@
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.3/ext/mysql2
-/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220705-19724-vhpuql.rb extconf.rb --with-opt-dir\=/usr/local/opt/openssl@1.1
+/Users/tama/.rbenv/versions/3.0.0/bin/ruby -I /Users/tama/.rbenv/versions/3.0.0/lib/ruby/3.0.0 -r ./siteconf20220706-28227-o7mhua.rb extconf.rb --with-opt-dir\=/usr/local/opt/openssl@1.1
 checking for rb_absint_size()... yes
 checking for rb_absint_singlebit_p()... yes
 checking for rb_wait_for_single_fd()... yes
@@ -38,4 +38,4 @@ linking shared-object mysql2/mysql2.bundle
 
 current directory: /Users/tama/projects/yukihira-official/vendor/bundle/ruby/3.0.0/gems/mysql2-0.5.3/ext/mysql2
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 mysql2.bundle ./.gem.20220705-19724-feiflc/mysql2
+/usr/bin/install -c -m 0755 mysql2.bundle ./.gem.20220706-28227-dvi9kn/mysql2
