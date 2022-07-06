@@ -8,3 +8,6 @@ ja:
         email: メールアドレス
         subject: 件名
         message: 本文
+  recaptcha:
+    errors:
+      verification_failed: "reCAPTCHA 認証失敗しました。しばらくしてからもう一度お試しください。"
