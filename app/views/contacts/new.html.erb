@@ -21,9 +21,11 @@
           <%= f.label :message, "本文", class: "p-contact__label" %>
           <%= f.text_area :message, placeholder: "本文（必須 : 500字以内）", class: "p-contact__message" %>
         </div>
+<!--
         <div class="p-contact__recaptcha">
           <%= recaptcha_tags %>
         </div>
+-->
         <div class="p-contact__btnBox">
           <%= f.submit '送信', class: 'p-contact__btn' %>
         </div>
