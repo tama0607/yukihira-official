@@ -5,4 +5,6 @@ class MenusController < ApplicationController
   end
   def live
   end
+  def movie
+  end
 end
