@@ -3,7 +3,7 @@
 .p-movie{
   margin-top: 55px;
   @include mq(tab) {
-    height: 1800px;
+    height: 1900px;
   }
   @include mq(sp) {
     height: 1650px;
