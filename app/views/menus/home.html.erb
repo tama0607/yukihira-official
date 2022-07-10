@@ -23,7 +23,7 @@
             <p class="p-home__newsTitle">2021/7/17 オリジナルMV投稿!</p>
             <p class="p-home__newsTitle">2022/6/22 ウェブサイト開設！</p>
             <div class="p-home__more">
-              <p class="p-home__moreBtn">MORE</p>
+              <%=link_to  "MORE", root_path, class:"p-home__moreLink" %>
             </div>
           </div>
         </div>
@@ -31,7 +31,9 @@
       <div class="p-home__twitter">
         <h2 class="p-home__title">Twitter</h2>
         <div class="p-home__inner">
-          <a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="dark" href="https://twitter.com/rito_yukihira?ref_src=twsrc%5Etfw">Tweets by rito_yukihira</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div class="p-home__twitterBox">
+            <a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="dark" href="https://twitter.com/rito_yukihira?ref_src=twsrc%5Etfw">Tweets by rito_yukihira</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
         </div>
       </div>
       <div class="p-home__movie">
@@ -41,30 +43,34 @@
             <div class="p-home__jacket">
               <%= image_tag 'home/midnight_aquarium.png', class: 'p-home__picture' %>
             </div>
-            <p class="p-home__jacketTitle">深夜水族館</p>
-            <p class="p-home__jacketText">2021/8/13 公開</p>
+            <p class="p-home__jacketTitle">オリジナル楽曲 『深夜水族館』</p>
+            <p class="p-home__jacketText">2021/8/13 公開!</p>
+            <div class="p-home__more">
+              <%=link_to  "MORE", movie_path, class:"p-home__moreLink" %>
+            </div>
           </div>
         </div>
       </div>
       <div class="p-home__goods">
         <h2 class="p-home__title">GOODS</h2>
         <div class="p-home__inner">
-          <div class="p-home__goodsBox">
-            <ul class="p-home__stampBox">
-              <li class="p-home__stamp">
-                <%= image_tag 'home/stamp1.png', class: 'p-home__stampIcon' %>
-              </li>
-              <li class="p-home__stamp">
-                <%= image_tag 'home/stamp2.png', class: 'p-home__stampIcon' %>
-              </li>
-              <li class="p-home__stamp">
-                <%= image_tag 'home/stamp3.png', class: 'p-home__stampIcon' %>
-              </li>
-              <li class="p-home__stamp">
-                <%= image_tag 'home/stamp4.png', class: 'p-home__stampIcon' %>
-              </li>
-            </ul>
-            <p class="p-home__stampTitle">ゆきひら りとのすたんぷ発売中！</p>
+          <ul class="p-home__stampBox">
+            <li class="p-home__stamp">
+              <%= image_tag 'home/stamp1.png', class: 'p-home__stampIcon' %>
+            </li>
+            <li class="p-home__stamp">
+              <%= image_tag 'home/stamp2.png', class: 'p-home__stampIcon' %>
+            </li>
+            <li class="p-home__stamp">
+              <%= image_tag 'home/stamp3.png', class: 'p-home__stampIcon' %>
+            </li>
+            <li class="p-home__stamp">
+              <%= image_tag 'home/stamp4.png', class: 'p-home__stampIcon' %>
+            </li>
+          </ul>
+          <p class="p-home__stampTitle">ゆきひら りとのすたんぷ発売中！</p>
+          <div class="p-home__more">
+            <%=link_to  "MORE", root_path, class:"p-home__moreLink" %>
           </div>
         </div>
       </div>

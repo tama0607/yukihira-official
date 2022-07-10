@@ -6,4 +6,9 @@ $(document).on('turbolinks:load', function() {
         autoplaySpeed: 3000,
     });
   });
+  $(function() {
+    $('.p-movie__hero').slick({
+        dots: true,
+    });
+  });
 });
