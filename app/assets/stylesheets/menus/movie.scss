@@ -1,9 +1,8 @@
 @import 'variable';
 
 .p-movie{
-  margin-top: 55px;
   @include mq(tab) {
-    height: 1900px;
+    height: 2000px;
   }
   @include mq(sp) {
     height: 1650px;
@@ -29,10 +28,12 @@
   }
   &__hero{
     @include mq(tab) {
+      margin-top: 100px;
       max-width: 960px;
       width: 100%;
     }
     @include mq(sp) {
+      margin-top: 20px;
       max-width: 480px;
       width: 100%;
     }
