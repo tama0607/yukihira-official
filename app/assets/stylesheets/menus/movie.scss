@@ -5,7 +5,7 @@
     height: 2000px;
   }
   @include mq(sp) {
-    height: 1650px;
+    height: 100%;
   }
   &__container{
     display: flex;
