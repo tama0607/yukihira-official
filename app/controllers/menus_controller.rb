@@ -7,4 +7,6 @@ class MenusController < ApplicationController
   end
   def movie
   end
+  def goods
+  end
 end
