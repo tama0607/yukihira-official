@@ -1,11 +1,12 @@
 @import 'variable';
 
 .p-movie{
+  padding-bottom: 50px;
   @include mq(tab) {
     height: 2000px;
   }
   @include mq(sp) {
-    height: 1650px;
+    height: 100%;
   }
   &__container{
     display: flex;
