@@ -1,7 +1,6 @@
 @import 'variable';
 
 .p-movie{
-  padding-bottom: 50px;
   @include mq(tab) {
     height: 2000px;
   }
