@@ -1,0 +1,15 @@
+<section class="p-goods">
+  <div class="p-goods__container">
+    <h1 class="p-goods__title">GOODS</h1>
+    <h2 class="p-goods__subTitle">LINEスタンプ販売中!!<br>全16種類</h2>
+    <ul class="p-goods__list">
+      <% for num in 1..16 do %>
+        <li class="p-goods__item">
+          <%= image_tag "goods/stamp#{num}.png", class: 'p-goods__stamp' %>
+        </li>
+      <% end %>
+    </ul>
+    <p class="p-goods__text">50コイン / ¥120</p>
+    <%=link_to  "購入はこちらから", "https://store.line.me/stickershop/product/17400707/ja?utm_source=gnsh_stickerDetail", class:"p-goods__link" %>
+  </div>
+</section>

@@ -1,0 +1,83 @@
+@import 'variable';
+
+.p-goods{
+  &__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__title{
+    font-family: "Times New Roman", "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    @include mq(tab) {
+      margin-top: 100px;
+      font-size: 40px;
+      font-size: 4.0rem;
+    }
+    @include mq(sp) {
+      margin-top: 20px;
+      font-size: 30px;
+      font-size: 3.0rem;
+    }
+  }
+  &__subTitle{
+    text-align: center;
+    font-family: "Times New Roman", "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+
+    @include mq(tab) {
+      margin-top: 100px;
+      font-size: 30px;
+      font-size: 3.0rem;
+    }
+    @include mq(sp) {
+      margin-top: 20px;
+      font-size: 20px;
+      font-size: 2.0rem;
+    }
+  }
+  &__list{
+    display: grid;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 15px;
+    width: 90%;
+    @include mq(tab) {
+      grid-template: 
+      "stamp1 stamp2 stamp3  stamp4" 100px
+      "stamp5 stamp6  stamp7 stamp8" 100px
+      "stamp9 stamp10 stamp11 stamp12" 100px
+      / 100px  100px  100px  100px;
+    }
+    @include mq(sp) {
+    grid-template: 
+      "stamp1 stamp2" 100px
+      "stamp3  stamp4" 100px
+      "stamp5 stamp6" 100px
+      "stamp7 stamp8" 100px
+      "stamp9 stamp10" 100px
+      "stamp11 stamp12" 100px
+      / 100px  100px;
+    }
+  }
+  &__item{
+    grid-area: stamp1,stamp2,stamp3,stamp4,
+               stamp5,stamp6,stamp7,stamp8,
+               stamp9,stamp10,stamp11,stamp12;
+  }
+  &__stamp{
+    width: 100%;
+  }
+  &__text{
+    margin-top: 20px;
+    font-family: "Times New Roman", "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    font-size: 25px;
+    font-size: 2.5rem;
+  }
+  &__link{
+    margin-top: 20px;
+    font-family: "Times New Roman", "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    font-size: 17px;
+    font-size: 1.7rem;
+    color: rgb(53, 161, 255);
+  }
+}
