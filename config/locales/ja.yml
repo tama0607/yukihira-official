@@ -11,3 +11,14 @@ ja:
   recaptcha:
     errors:
       verification_failed: "reCAPTCHA 認証失敗しました。しばらくしてからもう一度お試しください。"
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
+      short: "%m/%d"
+  views:
+    pagination:
+      first: "最初"
+      last: "最後"
+      previous: "« 前"
+      next: "次 »"
+      truncate: "..."

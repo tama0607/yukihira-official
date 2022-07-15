@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-  #before_action :check_captcha ,only: [:create]
+  before_action :check_captcha ,only: [:create]
 
   def new
     @contact = Contact.new
@@ -22,10 +22,10 @@ class ContactsController < ApplicationController
   def contact_params
     params.require(:contact).permit(:name, :email, :subject, :message)
   end
-  ##def check_captcha
-  ##  unless verify_recaptcha(message: "reCAPTCHAのチェックをしてください")
-  ##    @contact = Contact.new(contact_params)
-  ##    render :new
-  ##  end 
-  ##end
+  def check_captcha
+    unless verify_recaptcha(message: "reCAPTCHAのチェックをしてください")
+      @contact = Contact.new(contact_params)
+      render :new
+    end 
+  end
 end

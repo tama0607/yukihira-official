@@ -1,0 +1,20 @@
+<section class="p-news">
+  <div class="p-news__container">
+    <h1 class="p-news__title">NEWS</h1>
+    <div class="p-news__form">
+      <%= form_with model: @news, local: true do |f| %>
+      <div class="p-news__box">
+        <%= f.label :title, "タイトル", class: "p-news__label" %>
+        <%= f.text_field :title, placeholder: "ニュースタイトル", class: "p-news__titleForm" %>
+      </div>
+      <div class="p-news__box">
+        <%= f.label :text, "件名", class: "p-news__label" %>
+        <%= f.text_area :text, placeholder: "記事", class: "p-news__textForm" %>
+      </div>
+      <div class="p-news__btnBox">
+        <%= f.submit "投稿", class: "p-news__btn" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</section>

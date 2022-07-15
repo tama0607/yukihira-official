@@ -19,11 +19,13 @@
         <h2 class="p-home__title">NEWS</h2>
         <div class="p-home__inner">
           <div class="p-home__newsBox">
-            <p class="p-home__newsTitle">2022/5/17 スタンプ販売！</p>
-            <p class="p-home__newsTitle">2021/7/17 オリジナルMV投稿!</p>
-            <p class="p-home__newsTitle">2022/6/22 ウェブサイト開設！</p>
+            <% @allNews.first(3).each do |news| %>
+              <%= link_to(news_path(news.id), class: 'p-home__newsLink') do %>
+                <p class="p-home__newsTitle"><%= news.title %></p>
+              <% end %>
+            <% end %>
             <div class="p-home__more">
-              <%=link_to  "MORE", root_path, class:"p-home__moreLink" %>
+              <%=link_to  "MORE", news_index_path, class:"p-home__moreLink" %>
             </div>
           </div>
         </div>
