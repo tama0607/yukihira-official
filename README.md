@@ -1,24 +1,61 @@
-# README
+## URL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://yukihira-official.herokuapp.com/
 
-Things you may want to cover:
+## 管理者権限用パスワード
 
-* Ruby version
+ユーザー名：admin
+パスワード：admin1111
 
-* System dependencies
+ユーザー名：admin2
+パスワード：admin2222
 
-* Configuration
+## news テーブル
 
-* Database creation
+| Column | Type   | Options     |
+| ------ | ------ | ----------- |
+| title  | string | null: false |
+| text   | text   | null: false |
 
-* Database initialization
+## contact テーブル
 
-* How to run the test suite
+| Column  | Type   | Options     |
+| ------- | ------ | ----------- |
+| name    | string | null: false |
+| email   | string | null: false |
+| subject | string | null: false |
+| message | text   | null: false |
 
-* Services (job queues, cache servers, search engines, etc.)
+## news テーブル
 
-* Deployment instructions
+| Column  | Type    | Options     |
+| ------- | ------- | ----------- |
+| title   | string  | null: false |
+| text    | text    | null: false |
+| user_id | integer | null: false |
 
-* ...
+## users テーブル
+
+| Column             | Type   | Options     |
+| ------------------ | ------ | ----------- |
+| name               | string | null: false |
+| email              | string | null: false |
+| encrypted_password | string | null: false |
+
+### Association
+
+- belongs_to :user
+- has_many :news
+
+## 工夫したところ
+
+・ページを 7 ページ作ったところ。
+・フッターにて管理者権限ログイン、ログアウトができます。
+・機能としてはニュースページにて管理者権限を持つユーザーに対してのみ投稿、削除、編集が可能です。
+・管理者は自分が投稿した記事のみ削除、更新ができます。
+・カルーセル機能は slick を使用しました。
+・お問合せフォームページでは実際に自分の gmail にお問合せのメールが届く仕組みになっています。
+・フォームには 2 段階認証の recaptcha を使用しました。
+・また、フォームにていくつかのバリデーション設定をし、テストもできています。（spec ファイルにて。）
+・ホームの画面ではニュースの最新記事が表示される様にしています。
+・また各種アイコン、URL を押すとそれぞれのページに遷移します。
