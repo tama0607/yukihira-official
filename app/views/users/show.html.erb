@@ -1,0 +1,23 @@
+<section class="p-user">
+  <div class="p-user__container">
+    <h1 class="p-user__title">マイページ</h1>
+    <div class="p-user__post">
+      <p class="p-user__poster"><%= @name %>さんの投稿一覧</p>
+      <ul class="p-user__list">
+        <% @news.each do |news| %>
+        <li class="p-user__item">
+          <p class="p-user__subTitle">タイトル<br><%= news.title %></p>
+          <p class="p-user__text">投稿内容<br><%= news.text %></p>
+          <div class="p-user__select">
+            <%= link_to '編集', edit_news_path(news.id), method: :get, class:"p-user__link" %>
+            <%= link_to '削除', news_path(news.id), method: :delete, class:"p-user__link" %>
+          </div>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="p-news__pagenate">
+      <%= paginate @news %>
+    </div>
+  </div>
+</section>

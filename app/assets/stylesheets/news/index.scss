@@ -1,0 +1,75 @@
+@import 'variable';
+
+.p-news{
+  &__list{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    @include mq(tab) {
+      margin-top: 100px;
+    }
+    @include mq(sp) {
+      margin-top: 20px;
+    }
+  }
+  
+  &__item{
+    display: flex;
+    border-top: 1px solid black;
+    margin-top: 10px;
+    background-color: rgba(255,255,255,0.7);
+  }
+
+  &__subTitle,&__date{
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: 40px 0 40px 0;
+    margin-left: 20px;
+  }
+
+  &__select{
+    margin: auto 0 auto auto;
+  }
+
+  &__link{
+    margin-top: 20px;
+    font-family: "Times New Roman", "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    font-size: 17px;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: rgb(53, 161, 255);
+    padding-right: 5px;
+    &:not(:first-child){
+      margin-left: 10px;
+    }
+  }
+
+  &__user{
+    margin-top: auto;
+  }
+
+  &__userLink{
+    color: rgb(53, 161, 255);
+    font-size: 12px;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+
+  &__post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 150px;
+    height: 60px;
+    background-color: rgba(255,255,255,0.7);
+    border: 1px solid gray;
+  }
+
+  &__postLink{
+    text-decoration: none;
+    font-size: 13px;
+    font-size: 1.3rem;
+    color: rgb(53, 161, 255);
+  }
+}

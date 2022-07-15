@@ -8,5 +8,27 @@
     <div class="l-footer__copyright">
       <p class="l-footer__text">Copyright &copy; 2022 rito-yukihira</p>
     </div>
+    <% if user_signed_in? %>
+    <div class="l-footer__info">
+      <%= current_user.name %>
+      <ul class="l-footer__menu">
+        <li class="l-footer__list">
+          <%= link_to "マイページ", "/users/#{current_user.id}", class:"l-footer__link" %>
+        </li>
+        <li class="l-footer__list">
+          <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"l-footer__link" %>
+        </li>
+      </ul>
+      <%= link_to "投稿する", new_news_path, class:"l-footer__link" %>
+    </div>
+    <% else %>
+    <div class="l-footer__info">
+      <ul class="l-footer__menu">
+        <li class="l-footer__list">
+          <%= link_to "管理者の方はこちら", new_user_session_path, class:"l-footer__link" %>
+        </li>
+      </ul>
+    </div>
+    <% end %>
   </div>
 </footer>

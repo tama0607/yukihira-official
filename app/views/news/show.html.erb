@@ -1,0 +1,27 @@
+<section class="p-news">
+  <div class="p-news__container">
+    <h1 class="p-news__title">NEWS</h1>
+      <ul class="p-news__list">
+        <li class="p-news__item p-news__show">
+          <div class="p-news__titleBox">
+            <p class="p-news__date"><%= l @news.created_at, format: :short %></p>
+            <p class="p-news__subTitle"><%= @news.title %></p>
+          </div>
+          <div class="p-news__textBox">
+            <p class="p-news__text"><%= @news.text %></p>
+          </div>
+          <div class="p-news__select">
+            <%=link_to  "もどる", news_index_path, class:"p-news__link" %>
+            <% if user_signed_in? && current_user.id == @news.user_id %>
+              <%= link_to '編集', edit_news_path(@news.id), method: :get, class:"p-news__link" %>
+              <%= link_to '削除', news_path(@news.id), method: :delete, class:"p-news__link" %>
+          </div>
+          <div class="p-news__user">
+            <a href="/users/<%= @news.user.id %>" class="p-news__poster">
+            </a>
+          </div>
+        </li>
+      <% end %>
+      </ul>
+</section>
+

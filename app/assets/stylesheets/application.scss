@@ -24,3 +24,34 @@
   background-repeat: no-repeat;
 }
 
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+
+// 選択してない項目
+.pagination > span > a{
+  display: block;
+  color: rgb(53, 161, 255);
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-left: 10px;
+  border: 1px solid gray;
+  width: 55px;
+  background-color: rgba(255,255,255,0.7);
+}
+
+// 選択している項目
+.pagination > .current{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-left: 10px;
+  border: 1px solid gray;
+  width: 55px;
+  background-color: rgba(255,255,255,0.7);
+}
