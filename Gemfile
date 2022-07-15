@@ -61,3 +61,5 @@ gem 'jquery-rails'
 gem 'dotenv-rails'
 gem 'recaptcha', require: "recaptcha/rails"
 gem 'rails-i18n'
+gem 'devise'
+gem 'kaminari'
