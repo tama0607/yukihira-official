@@ -65,6 +65,7 @@
     align-items: center;
     flex-direction: column;
     width: 95%;
+    margin-top: 10px;
     @include mq(tab) {
       height: 400px;
     }
@@ -72,11 +73,15 @@
       height: 150px;
     }
   }
+  &__newsLink{
+    width: 95%;
+    border-bottom: 1px solid gray;
+    text-decoration: none;
+  }
   &__newsTitle{
     display: flex;
     align-items: center;
-    width: 95%;
-    border-bottom: 1px solid gray;
+    color:rgb(55, 135, 201);
     @include mq(tab) {
       font-size: 20px;
       font-size: 2.0rem;
@@ -229,9 +234,7 @@
     display: flex;
     justify-content: center;
     width: 50%;
-    &:nth-child(n+3){
-      margin-top: 10px;
-    }
+    margin-top: 10px;
   }
   &__stampIcon{
     @include mq(tab) {
