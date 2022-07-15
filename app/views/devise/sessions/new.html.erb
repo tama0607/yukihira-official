@@ -1,0 +1,34 @@
+<div class="p-login">
+  <div class="p-login__container">
+    <h1 class="p-login__title">管理者用ログイン</h1>
+    <div class="p-login__form">
+      <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+        <div class="p-login__box">
+          <%= f.label :name, "名前", class:"p-login__label" %><br/>
+          <%= f.text_field :name, autofocus: true, maxlength: "6", class: "p-contact__name" %>
+        </div>  
+
+        <div class="p-login__box">
+          <%= f.label :email, "メールアドレス", class:"p-login__label" %><br/>
+          <%= f.email_field :email, autofocus: true, class: "p-contact__email" %>
+        </div>
+
+        <div class="p-login__box">
+          <%= f.label :password, "パスワード", class:"p-login__label" %><br/>
+          <%= f.password_field :password, autocomplete: "off", class: "p-login__password"%>
+        </div>
+
+        <% if devise_mapping.rememberable? %>
+          <div class="p-login__box">
+            <%= f.label :remember_me, "ログイン状態を保つ", class:"p-login__label" %><br/>
+            <%= f.check_box :remember_me, class: "p-login__check" %>
+          </div>
+        <% end -%>
+
+        <div class="p-login__btnBox">
+          <%= f.submit "ログイン", class:"p-login__btn" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
