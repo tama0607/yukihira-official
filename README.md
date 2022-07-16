@@ -4,12 +4,12 @@ https://yukihira-official.herokuapp.com/
 
 ## 管理者権限用パスワード
 
-ユーザー名：admin
-メールアドレス：yukihira.info@gmail.com
+ユーザー名：admin  
+メールアドレス：yukihira.info@gmail.com  
 パスワード：admin1111
 
-ユーザー名：admin2
-メールアドレス；rito.yukihira1111@gmail.com
+ユーザー名：admin2  
+メールアドレス:rito.yukihira1111@gmail.com  
 パスワード：admin2222
 
 ## news テーブル
