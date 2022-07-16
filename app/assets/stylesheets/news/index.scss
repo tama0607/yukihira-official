@@ -1,6 +1,7 @@
 @import 'variable';
 
 .p-news{
+  min-height: 550px;
   &__list{
     display: flex;
     flex-direction: column;
