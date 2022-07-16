@@ -4,7 +4,7 @@
   &__list{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     @include mq(tab) {
       margin-top: 100px;
     }
@@ -15,44 +15,92 @@
   
   &__item{
     display: flex;
+    align-items: center;
     border-top: 1px solid black;
     margin-top: 10px;
     background-color: rgba(255,255,255,0.7);
   }
 
   &__subTitle,&__date{
-    font-size: 16px;
-    font-size: 1.6rem;
-    padding: 40px 0 40px 0;
-    margin-left: 20px;
+    @include mq(tab) {
+      font-size: 16px;
+      font-size: 1.6rem;
+      padding: 40px 0 40px 0;
+      margin-left: 20px;
+    }
+    @include mq(sp) {
+      font-size: 12px;
+      font-size: 1.2rem;
+      padding: 10px 0 10px 0;
+      margin-left: 10px;
+    }
+    
+  }
+
+  &__linkBox{
+    margin-left: auto;
+    @include mq(tab) {
+    }
+    @include mq(sp) {
+      display: flex;
+      flex-direction: column;
+      padding-right: 10px;
+    }
   }
 
   &__select{
-    margin: auto 0 auto auto;
+    @include mq(tab) {
+      margin: auto 0 auto auto;
+    }
+    @include mq(sp) {
+      display: flex;
+      flex-direction: column;
+      padding-top: 5px;
+      margin-left: auto;
+    }
   }
-
   &__link{
-    margin-top: 20px;
     font-family: "Times New Roman", "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-    font-size: 17px;
-    font-size: 1.7rem;
     text-decoration: none;
     color: rgb(53, 161, 255);
-    padding-right: 5px;
-    &:not(:first-child){
-      margin-left: 10px;
+    @include mq(tab) {
+      margin-top: 20px;
+      font-size: 17px;
+      font-size: 1.7rem;
+      padding-right: 5px;
+      &:not(:first-child){
+        margin-left: 10px;
+      }
+    }
+    @include mq(sp) {
+      font-size: 10px;
+      font-size: 1.0rem;
     }
   }
 
   &__user{
-    margin-top: auto;
+    margin-top: 5px;
+    @include mq(tab) {
+      font-size: 12px;
+      font-size: 1.2rem;
+    }
+    @include mq(sp) {
+      font-size: 10px;
+      font-size: 1.0rem;
+    }
   }
 
   &__userLink{
     color: rgb(53, 161, 255);
-    font-size: 12px;
-    font-size: 1.2rem;
     text-decoration: none;
+    @include mq(tab) {
+      font-size: 12px;
+      font-size: 1.2rem;
+    }
+    @include mq(sp) {
+      font-size: 10px;
+      font-size: 1.0rem;
+    }
   }
 
   &__post{

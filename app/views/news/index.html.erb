@@ -6,16 +6,18 @@
       <li class="p-news__item">
         <p class="p-news__date"><%= l news.created_at, format: :short %></p>
         <p class="p-news__subTitle"><%= news.title %></p>
-        <div class="p-news__select">
-          <%= link_to 'MORE', news_path(news.id), method: :get, class:"p-news__link" %>
-        <% if user_signed_in? && current_user.id == news.user_id %>
-          <%= link_to '編集', edit_news_path(news.id), method: :get, class:"p-news__link" %>
-          <%= link_to '削除', news_path(news.id), method: :delete, class:"p-news__link" %>
+        <div class="p-news__linkBox">
+          <div class="p-news__select">
+            <%= link_to 'MORE', news_path(news.id), method: :get, class:"p-news__link" %>
+          <% if user_signed_in? && current_user.id == news.user_id %>
+            <%= link_to '編集', edit_news_path(news.id), method: :get, class:"p-news__link" %>
+            <%= link_to '削除', news_path(news.id), method: :delete, class:"p-news__link" %>
+          </div>
+          <div class="p-news__user">
+            <%= link_to "投稿者 " + news.user.name + "さん", user_path(news.user), method: :get, class:"p-news__userLink" %>
+          </div>
+          <% end %>
         </div>
-        <div class="p-news__user">
-          <%= link_to "投稿者 " + news.user.name + "さん", user_path(news.user), method: :get, class:"p-news__userLink" %>
-        </div>
-        <% end %>
       </li>
     <% end %>
     </ul>

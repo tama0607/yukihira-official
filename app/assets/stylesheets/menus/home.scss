@@ -6,7 +6,7 @@
     height: 1800px;
   }
   @include mq(sp) {
-    height: 2050px;
+    height: 1800px;
   }
   &__container{
     display: flex;
@@ -90,7 +90,6 @@
     @include mq(sp) {
       font-size: 15px;
       font-size: 1.5rem;
-      height: 50px;
     }
   }
   &__more{
