@@ -22,10 +22,17 @@
     background-color: rgba(255,255,255,0.7);
     border-top: 1px solid gray;
   }
+  
   &__sns{
     display: flex;
-    padding-right: 15px;
+    @include mq(tab) {
+      padding-right: 15px;
+    }
+    @include mq(sp) {
+      padding-left: 15px;
+    }
   }
+
   &__LINE{
     width: 15px;
     height: 15px;
@@ -34,6 +41,7 @@
     background-position: center;
     background-image: image-url('LINE-logo.png');
   }
+
   &__tiktok{
     width: 15px;
     height: 15px;
@@ -52,20 +60,29 @@
     background-image: image-url('niconico-logo.png');
     margin-left: 15px;
   }
+
   &__copyright{
     padding-left: 10px;
   }
+
   &__text{
-    font-size: 11px;
-    font-size: 1.1rem;
     text-decoration: none;
     color: black;
     font-family: 'Maven Pro',sans-serif;
     font-weight: 800;
+    @include mq(tab) {
+      font-size: 11px;
+      font-size: 1.1rem;
+    }
+    @include mq(sp) {
+      display: none;
+    }
   }
+
   &__info{
-    margin-left: 20px;
+    margin-left: 10px;
   }
+
   &__menu{
     display: flex;
   }
@@ -74,10 +91,18 @@
       margin-left: 10px;
     }
   }
+
   &__link{
     font-family: "Times New Roman", "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
     color: rgb(53, 161, 255);
-    font-size: 11px;
-    font-size: 1.1rem;
+    @include mq(tab) {
+      font-size: 11px;
+      font-size: 1.1rem;
+    }
+    @include mq(sp) {
+      font-size: 9px;
+      font-size: 0.9rem;
+      padding-right: 5px;
+    }
   }
 }
